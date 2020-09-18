@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Organisation
+  Funding
 {% endblock %}
 
 {% block beforeContent %}
@@ -13,16 +13,51 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">What type of organisation is leading the project?</h1>
+      <!-- <h1 class="govuk-heading-xl">What is your estimated funding requirement?</h1> -->
 
-      <form class="form" action="funding" method="post">
+      <form action="/funding" method="post" novalidate>
 
-        <p>[Insert question content here]</p>
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                What type of organisation is leading the project?
+              </h1>
+            </legend>
+            <p></p>
+            <div class="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="org-type" name="org-type" type="radio" value="regulatory">
+                <label class="govuk-label govuk-radios__label" for="org-type">
+                  Regulatory body (such as the Environment Agency)
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="org-type-2" name="org-type" type="radio" value="local-authority">
+                <label class="govuk-label govuk-radios__label" for="org-type-2">
+                  Local authority
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="org-type-3" name="org-type" type="radio" value="community-group">
+                <label class="govuk-label govuk-radios__label" for="org-type-3">
+                  Community group/registered charity
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="org-type-4" name="org-type" type="radio" value="landowner">
+                <label class="govuk-label govuk-radios__label" for="org-type-4">
+                  Farmer/landowner
+                </label>
+              </div>
+            </div>
 
-        <p>[See <a href="https://design-system.service.gov.uk">the GOV.UK Design System</a> for examples]</p>
+          </fieldset>
+        </div>
 
-        <button class="govuk-button" data-module="govuk-button">Continue</button>
-
+        <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
       </form>
 
     </div>

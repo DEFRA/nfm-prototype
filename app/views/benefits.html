@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Funding
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <!-- <h1 class="govuk-heading-xl">What is your estimated funding requirement?</h1> -->
+
+      <form action="/results" method="post" novalidate>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="benefit-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                What will the benefits of your project be?
+              </h1>
+            </legend>
+            <p></p>
+            <!-- <div id="benefit-hint" class="govuk-hint">
+            Some funding is allocated based on the benefits a project may bring to a local area or community. If your project has benefits other than reducing flood risk, you should select them here.
+            </div> -->
+            <p>Some funding is allocated based on the benefits a project may bring to a local area or community. If your project has benefits other than reducing flood risk, you should select them here.</p>
+            <p></p>
+            <div class="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="benefit" name="benefit" type="checkbox" value="carcasses">
+                <label class="govuk-label govuk-checkboxes__label" for="benefit">
+                  increasing biodiversity
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="benefit-2" name="benefit" type="checkbox" value="mines">
+                <label class="govuk-label govuk-checkboxes__label" for="benefit-2">
+                  citizen science
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="benefit-3" name="benefit" type="checkbox" value="farm">
+                <label class="govuk-label govuk-checkboxes__label" for="benefit-3">
+                  community/volunteer engagement
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="benefit-3" name="benefit" type="checkbox" value="farm">
+                <label class="govuk-label govuk-checkboxes__label" for="benefit-3">
+                  education
+                </label>
+              </div>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
