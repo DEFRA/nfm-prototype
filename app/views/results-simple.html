@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Results
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Your results</h1>
+
+
+      <p>Your project may be eligible for funding from the following sources.</p>
+      <p>We can't show you all the funding that’s available across England. You should still look for other funds that might be available.</p>
+      <p>Learn out more about <a href="gov.uk">the other ways you can find funding for natural flood management.</a></p>
+
+
+        <!-- <button class="govuk-button" data-module="govuk-button">Continue</button> -->
+
+        <h2 class="govuk-heading-m">3 results</h2>
+
+        <ul class="results-list">
+          <li class="results-list-item">
+            <a href="result">DEFRA natural flood management bursary</a>
+            <p>Deadline: 20 October 2020</p>
+          </li>
+          <li class="results-list-item">
+            <a href="result">Liverpool City Council community fund</a>
+            <p>Deadline: 25 March 2021</p>
+          </li>
+          <li class="results-list-item">
+            <a href="result">National Lottery environment bursary</a>
+            <p>Deadline: 3 December 2020</p>
+          </li>
+        </ul>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="govuk-grid-row">
+
+
+    <div class="govuk-grid-column-two-thirds">
+
+    </div>
+</div>
+
+
+
+
+{% endblock %}

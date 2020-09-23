@@ -145,7 +145,7 @@ Results
             <div class="govuk-radios__item">
               <input class="govuk-radios__input" id="org-type" name="org-type" type="radio" value="regulatory">
               <label class="govuk-label govuk-radios__label" for="org-type">
-                Regulatory body (such as the Environment Agency)
+                Public body (such as the Environment Agency or the Coal Authority)
               </label>
             </div>
             <div class="govuk-radios__item">
@@ -166,6 +166,12 @@ Results
                 Farmer/landowner
               </label>
             </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="org-type-4" name="org-type" type="radio" value="landowner">
+              <label class="govuk-label govuk-radios__label" for="org-type-4">
+                Private business (such as a water company)
+              </label>
+            </div>
           </div>
         </div>
       </div>
@@ -180,7 +186,32 @@ Results
             <span class="govuk-accordion__icon" aria-hidden="true"></span></button></h2>
         </div>
         <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
-          <p class="govuk-body">This is the content for funding.</p>
+          <div class="govuk-radios govuk-radios--small">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="funding-requirement" name="funding-requirement" type="radio" value="up-to-1000">
+              <label class="govuk-label govuk-radios__label" for="funding-requirement">
+                up to £10,000
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="funding-requirement-2" name="funding-requirement" type="radio" value="10000-50000">
+              <label class="govuk-label govuk-radios__label" for="funding-requirement-2">
+                £10,000 - £50,000
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="funding-requirement-3" name="funding-requirement" type="radio" value="50000-100000">
+              <label class="govuk-label govuk-radios__label" for="funding-requirement-3">
+                £50,000 - £100,000
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="funding-requirement-4" name="funding-requirement" type="radio" value="over-100000">
+              <label class="govuk-label govuk-radios__label" for="funding-requirement-4">
+                over £100,000
+              </label>
+            </div>
+          </div>
         </div>
       </div>
       <div class="govuk-accordion__section">
@@ -192,7 +223,44 @@ Results
             <span class="govuk-accordion__icon" aria-hidden="true"></span></button></h2>
         </div>
         <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
-          <p class="govuk-body">This is the content for benefits.</p>
+          <div class="govuk-checkboxes govuk-checkboxes--small">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="benefit-3" name="benefit" type="checkbox" value="farm">
+              <label class="govuk-label govuk-checkboxes__label" for="benefit-3">
+                Community/ volunteer engagement
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="benefit-3" name="benefit" type="checkbox" value="farm">
+              <label class="govuk-label govuk-checkboxes__label" for="benefit-3">
+                Improving biodiversity and habitat
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="benefit-3" name="benefit" type="checkbox" value="farm">
+              <label class="govuk-label govuk-checkboxes__label" for="benefit-3">
+                Improving health and wellbeing
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="benefit-3" name="benefit" type="checkbox" value="farm">
+              <label class="govuk-label govuk-checkboxes__label" for="benefit-3">
+                Improving soil health
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="benefit-2" name="benefit" type="checkbox" value="mines">
+              <label class="govuk-label govuk-checkboxes__label" for="benefit-2">
+              Improving water quality
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="benefit" name="benefit" type="checkbox" value="carcasses">
+              <label class="govuk-label govuk-checkboxes__label" for="benefit">
+                Reducing/ capturing carbon
+              </label>
+            </div>
+          </div>
         </div>
       </div>
 </div>
@@ -211,15 +279,15 @@ Results
 
       <ul class="results-list">
         <li class="results-list-item">
-          <a href="#">DEFRA natural flood management bursary</a>
+          <a href="result">DEFRA natural flood management bursary</a>
           <p>Deadline: 20 October 2020</p>
         </li>
         <li class="results-list-item">
-          <a href="#">Liverpool City Council community fund</a>
+          <a href="result">Liverpool City Council community fund</a>
           <p>Deadline: 25 March 2021</p>
         </li>
         <li class="results-list-item">
-          <a href="#">National Lottery environment bursary</a>
+          <a href="result">National Lottery environment bursary</a>
           <p>Deadline: 3 December 2020</p>
         </li>
       </ul>
