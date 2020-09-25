@@ -5,7 +5,10 @@ Results
 {% endblock %}
 
 {% block beforeContent %}
-<a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{{ govukBackLink({
+    text: 'Back',
+    href: 'javascript:history.back()'
+}) }}
 {% endblock %}
 
 {% block content %}

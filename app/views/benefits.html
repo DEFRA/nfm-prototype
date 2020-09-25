@@ -5,7 +5,10 @@
 {% endblock %}
 
 {% block beforeContent %}
-  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{{ govukBackLink({
+    text: 'Back',
+    href: 'javascript:history.back()'
+}) }}
 {% endblock %}
 
 {% block content %}
@@ -64,7 +67,7 @@
                   Improving soil health
                 </label>
               </div>
-            
+
               <div class="govuk-checkboxes__item">
                 <input class="govuk-checkboxes__input" id="benefit-2" name="benefit" type="checkbox" value="mines">
                 <label class="govuk-label govuk-checkboxes__label" for="benefit-2">
