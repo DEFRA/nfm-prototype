@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Funding
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukBackLink({
+    text: 'Back',
+    href: 'javascript:history.back()'
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <!-- <h1 class="govuk-heading-xl">What is your estimated funding requirement?</h1> -->
+
+      <form action="results" method="post" novalidate>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="benefit-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                What will the benefits of your project be?
+              </h1>
+            </legend>
+            <p></p>
+            <!-- <div id="benefit-hint" class="govuk-hint">
+            Some funding is allocated based on the benefits a project may bring to a local area or community. If your project has benefits other than reducing flood risk, you should select them here.
+            </div> -->
+            <p>Projects that have a range of different benefits (as well as reducing flood risk) are more likely to find funding opportunities.</p>
+            <p>If your project has additional benefits you should select them here.</p>
+
+
+
+            <div class="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="benefit-3" name="benefit" type="checkbox" value="farm">
+                <label class="govuk-label govuk-checkboxes__label" for="benefit-3">
+                  Community/ volunteer engagement
+                </label>
+              </div>
+                 <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="benefit-3" name="benefit" type="checkbox" value="farm">
+                <label class="govuk-label govuk-checkboxes__label" for="benefit-3">
+                  Improving access to green space and water environments
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="benefit-3" name="benefit" type="checkbox" value="farm">
+                <label class="govuk-label govuk-checkboxes__label" for="benefit-3">
+                  Improving biodiversity and habitat
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="benefit-3" name="benefit" type="checkbox" value="farm">
+                <label class="govuk-label govuk-checkboxes__label" for="benefit-3">
+                  Improving health and wellbeing
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="benefit-3" name="benefit" type="checkbox" value="farm">
+                <label class="govuk-label govuk-checkboxes__label" for="benefit-3">
+                  Improving soil health
+                </label>
+              </div>
+
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="benefit-2" name="benefit" type="checkbox" value="mines">
+                <label class="govuk-label govuk-checkboxes__label" for="benefit-2">
+                Improving water quality
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="benefit" name="benefit" type="checkbox" value="carcasses">
+                <label class="govuk-label govuk-checkboxes__label" for="benefit">
+                  Reducing/ capturing carbon
+                </label>
+              </div>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <a href="results" role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8 govuk-button--start" data-module="govuk-button">
+          Continue
+        </a>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

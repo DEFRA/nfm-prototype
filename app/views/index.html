@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Flood map for planning
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">
+      Find funding for natural flood management
+    </h1>
+
+    <br>
+
+    <p>This prototype is a way of exploring ideas and is subject to change.</p>
+
+    <h2 class="govuk-heading-m">
+      Change log
+    </h2>
+    <table class="govuk-table">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="col">Date</th>
+          <th class="govuk-table__header" scope="col">Comments</th>
+          <th class="govuk-table__header" scope="col" style="width:7em">Link</th>
+        </tr>
+      </thead>
+
+
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">02/10/2020</td>
+          <td class="govuk-table__cell">Simplified Results page as the Specialist Publisher UI was confusing to some users. Added alternative method for specifying the region/area of the project, as some users had questioned the boundaries of the region names in version 1</td>
+          <td class="govuk-table__cell"><a href="version-2/start.html">Version 2</a></td>
+        </tr>
+      </tbody>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">21/09/2020</td>
+          <td class="govuk-table__cell">Initial version created for first round of user testing, using our initial discovery wireframe as the basis.</td>
+          <td class="govuk-table__cell"><a href="version-1/start.html">Version 1</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br><br>
+
+
+
+  </div>
+</div>
+
+{% endblock %}
