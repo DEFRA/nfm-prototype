@@ -26,6 +26,11 @@ $govuk-assets-path: '/govuk/assets/'; // Import GOV.UK Frontend and any extensio
   //   margin-bottom: 0.25rem;
   // }
 
+  .govuk-hint#location-hint {
+    display: block;
+    margin-top: 60px;
+  }  
+
   .meta {
     display: inline-block;
     font-size: 1rem;

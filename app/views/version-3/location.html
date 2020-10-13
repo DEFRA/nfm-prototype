@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Funding
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukBackLink({
+    text: 'Back',
+    href: 'javascript:history.back()'
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form action="organisation" method="post" novalidate>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                Which area will the project be in?
+              </h1>
+            </legend>
+            <p>We'll show you national as well as regional results. </p>
+
+
+
+
+
+
+
+            <span id="location-hint" class="govuk-hint">
+                     Search by county, town/city or catchment
+                    </span>
+            <input id="search" class="govuk-input">
+            <!-- <h2 class="govuk-heading-m">Select a region</h2> -->
+
+
+
+
+            <h2 class="govuk-heading-m map-link">or <a href="map">find the location on a map</a></h2>
+
+
+
+
+
+
+
+
+
+
+          </fieldset>
+        </div>
+
+        <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
