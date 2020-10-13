@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+NFM alpha Start page
+{% endblock %}
+
+{% block header %}
+<!-- Blank header with no service name for the start page -->
+{{ govukHeader() }}
+{% endblock %}
+
+
+{% block beforeContent %}
+{{ govukBackLink({
+    text: 'Back',
+    href: 'javascript:history.back()'
+}) }}
+{% endblock %}
+
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl heading-with-caption">
+      Highways England: environment and wellbeing fund
+    </h1>
+    <span class="govuk-caption-xl">Deadline: none</span>
+
+    
+    
+    <h2 class="govuk-heading-l">Who can apply</h2>
+    
+
+    <p>This fund is aimed at projects looking to: </p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>improve biodiversity</li>
+      <li>reduce flood risk</li>
+      <li>improve water quality</li>
+      <li>support the government's ambition to reduce carbon</li>
+      <li>protect and enhance the character of the landscape</li>
+    </ul>
+
+    <p>The fund is open to organisations from the public, third and private sectors.</p>
+
+  
+
+
+    <h2 class="govuk-heading-l">Apply and find out more</h2>
+
+    <p><a href="https://highwaysengland.co.uk/designated-funds/">Find out more about this fund and how to apply</a></p>
+
+
+
+
+  </div>
+
+
+</div>
+{% endblock %}

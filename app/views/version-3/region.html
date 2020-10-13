@@ -1,0 +1,124 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Funding
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukBackLink({
+    text: 'Back',
+    href: 'javascript:history.back()'
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form action="organisation" method="post" novalidate>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                Which area will the project be in?
+              </h1>
+            </legend>
+            <p>We'll show you national as well as regional results. </p>
+
+
+
+
+
+
+            <h2 class="govuk-heading-m">Select a region</h2>
+
+            <div class="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="region-1" name="region" type="radio" value="south-west">
+                <label class="govuk-label govuk-radios__label" for="region-1">
+                  South West
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="region-2" name="region" type="radio" value="south-east">
+                <label class="govuk-label govuk-radios__label" for="region-2">
+                  South East
+                </label>
+              </div>
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="region-3" name="region" type="radio" value="london">
+                <label class="govuk-label govuk-radios__label" for="region-3">
+                  London
+                </label>
+              </div>
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="region-4" name="region" type="radio" value="east-of-england">
+                <label class="govuk-label govuk-radios__label" for="region-4">
+                  East of England
+                </label>
+              </div>
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="region-5" name="region" type="radio" value="west-midlands">
+                <label class="govuk-label govuk-radios__label" for="region-5">
+                  West Midlands
+                </label>
+              </div>
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="region-6" name="region" type="radio" value="east-midlands">
+                <label class="govuk-label govuk-radios__label" for="region-6">
+                  East Midlands
+                </label>
+              </div>
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="region-7" name="region" type="radio" value="north-west">
+                <label class="govuk-label govuk-radios__label" for="region-7">
+                  North West
+                </label>
+              </div>
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="region-8" name="region" type="radio" value="north-east">
+                <label class="govuk-label govuk-radios__label" for="region-8">
+                  North East
+                </label>
+              </div>
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="region-9" name="region" type="radio" value="yorkshire-humber">
+                <label class="govuk-label govuk-radios__label" for="region-9">
+                  Yorkshire and the Humber
+                </label>
+              </div>
+            </div>
+
+
+            <h2 class="govuk-heading-m map-link">or <a href="map">find the location on a map</a></h2>
+
+
+
+
+
+
+
+
+
+
+          </fieldset>
+        </div>
+
+        <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
