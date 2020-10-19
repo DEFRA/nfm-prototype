@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+NFM alpha Start page
+{% endblock %}
+
+{% block header %}
+<!-- Blank header with no service name for the start page -->
+{{ govukHeader() }}
+{% endblock %}
+
+
+{% block beforeContent %}
+{{ govukBackLink({
+    text: 'Back',
+    href: 'javascript:history.back()'
+}) }}
+{% endblock %}
+
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl heading-with-caption">
+      Getting funding for a natural flood management project
+    </h1>
+
+    <p></p>
+    
+    <h2 class="govuk-heading-l">Where to find funding</h2>
+    
+
+    <p>As well as using the <a href="start">find funding for natural flood management service</a>, you should also speak to your:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Lead Local Flood Authority (LLFA)</li>
+  <li>Local Authority</li>
+    </ul><p>They may be able to help you with your project.</p>
+
+  
+
+
+    <h2 class="govuk-heading-l">Writing a successful application</h2>
+
+    <p>Successful applicants for natural flood management funding tend to make sure their application is focused on the funder's aims and objectives. All applications should be tailored to the body that is awarding the funding. Generic applications are often not successful.</p>
+    <p>You may also want to consider building other benefits (as well as flood reduction) into your project.</p> 
+    <p>Projects that have a range of environmental and social benefits are often able to access funding more easily. These benefits could include:
+    </p>
+    <ul class="govuk-list govuk-list--bullet">
+          <li>engaging with communities or volunteers</li>
+     
+         <li>improving access to green space and water environments</li> 
+     
+          <li>improving biodiversity and habitat</li>
+      
+          <li>improving health and wellbeing</li>
+      
+         <li>improving soil health</li> 
+       
+      <li>improving water quality</li>  
+      
+         <li>reducing/ capturing carbon</li> 
+       </ul>
+   
+    <h2 class="govuk-heading-l">Helpful information</h2>
+    <p>For more information about natural flood management and reducing flood risk visit: </p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://nationalfloodforum.org.uk/">the National Flood Forum</a></li>
+      <li><a href="https://catchmentbasedapproach.org/">Catchment Based Approach</a></li>
+      <li><a href="http://slowtheflow.net/">Slow The Flow</a></li>
+     
+    </ul>
+
+  </div>
+
+
+</div>
+{% endblock %}
