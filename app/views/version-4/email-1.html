@@ -11,9 +11,18 @@
 {% block content %}
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
-
-      <h1 class="govuk-heading-xl">Check your answers</h1>
-
+      <div class="govuk-width-container">
+  
+      
+        <main class="govuk-main-wrapper">
+      
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+              <h1 class="govuk-heading-xl">Get your results in an email</h1>
+              <p class="govuk-body">We'll send you an email notification whenever new funding is released that matches your criteria.</p>
+              <p class="govuk-body">Before signing up for email notifications, you can check and change your criteria. </p>
+         
+    
 
       <dl class="govuk-summary-list govuk-!-margin-bottom-9">
         <div class="govuk-summary-list__row">
@@ -77,9 +86,6 @@
 
 
 
-      <h2 class="govuk-heading-m">Now send your application</h2>
-
-      <p>By submitting this notification you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
 
       <form action="email-2" method="post" novalidate>
 
@@ -90,7 +96,11 @@
         </button>
 
       </form>
+    </div>
+  </div>
 
+</main>
+</div>
     </div>
   </div>
 {% endblock %}
