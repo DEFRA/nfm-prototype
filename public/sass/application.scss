@@ -115,6 +115,10 @@ $govuk-assets-path: '/govuk/assets/'; // Import GOV.UK Frontend and any extensio
   .govuk-accordion__section-button {
     font-size: 1.25rem;
   }
+
+  .govuk-summary-list__key {
+      width: 50%;
+  }
 }
 
 .js-enabled .govuk-accordion__section--expanded .govuk-accordion__section-content {
