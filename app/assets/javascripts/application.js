@@ -81,8 +81,10 @@ map.on('pointermove', function(e) {
 //////////////////////
 
 
-
-
+map.on("singleclick", function(evt){
+  var newPoint = new ol.geom.Point(evt.coordinate);
+  marker.set('geometry', newPoint);
+});
 
 
 
