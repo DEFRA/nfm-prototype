@@ -5,24 +5,27 @@
 {% endblock %}
 
 {% block beforeContent %}
-  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{{ govukBackLink({
+    text: 'Back',
+    href: 'javascript:history.back()'
+}) }}
 {% endblock %}
 
 {% block content %}
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
       <div class="govuk-width-container">
-  
-      
+
+
         <main class="govuk-main-wrapper">
-      
+
           <div class="govuk-grid-row">
             <div class="govuk-grid-column-two-thirds">
               <h1 class="govuk-heading-xl">Sign up for email notifications</h1>
               <p class="govuk-body">We'll send you an email notification whenever new funding is released that matches your criteria.</p>
               <p class="govuk-body">Before signing up for email notifications, you can check and change your criteria. </p>
-         
-    
+
+
 
       <dl class="govuk-summary-list govuk-!-margin-bottom-9">
         <div class="govuk-summary-list__row">
@@ -30,7 +33,7 @@
             Which area will the project be in?
           </dt>
           <dd class="govuk-summary-list__value">
-            Upper Thames
+            {{ data['search'] }}
           </dd>
           <dd class="govuk-summary-list__actions">
             <a href="#">
@@ -44,7 +47,7 @@
             Who is leading the project?
           </dt>
           <dd class="govuk-summary-list__value">
-            Community group/registered charity
+            {{ data['org-type'] }}
           </dd>
           <dd class="govuk-summary-list__actions">
             <a href="#">
@@ -58,7 +61,7 @@
             How much funding do you think you'll need?
           </dt>
           <dd class="govuk-summary-list__value">
-            over £100,000
+            {{ data['funding-requirement'] }}
           </dd>
           <dd class="govuk-summary-list__actions">
             <a href="#">
@@ -72,7 +75,7 @@
             What will the benefits of your project be?
           </dt>
           <dd class="govuk-summary-list__value">
-            <p>Community/volunteer engagement, improving biodiversity and habitat, improving soil health, improving water quality</p>
+            <p>Community/volunteer engagement, improving biodiversity and habitat, improving water quality</p>
           </dd>
           <dd class="govuk-summary-list__actions">
             <a href="#">
@@ -87,9 +90,15 @@
 
 
 
-      <form action="email-2" method="post" novalidate>
+      <form action="email-conf" method="post" novalidate>
 
         <input type="hidden" name="answers-checked" value="true">
+
+        <label class="govuk-label" for="email">
+          Please enter your email address
+        </label>
+        <input class="govuk-input" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
+        <p>&nbsp;</p>
 
         <button type="submit" class="govuk-button" data-module="govuk-button">
           Continue
