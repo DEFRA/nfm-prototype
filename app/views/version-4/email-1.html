@@ -21,9 +21,9 @@
 
           <div class="govuk-grid-row">
             <div class="govuk-grid-column-two-thirds">
-              <h1 class="govuk-heading-xl">Sign up for email notifications</h1>
-              <p class="govuk-body">We'll send you an email notification whenever new funding is released that matches your criteria.</p>
-              <p class="govuk-body">Before signing up for email notifications, you can check and change your criteria. </p>
+              <h1 class="govuk-heading-xl">Sign up for email updates</h1>
+              <p class="govuk-body">We'll send you an email when new funding is released that matches your criteria.</p>
+              <p class="govuk-body">Before signing up for email updates, you can check and change your criteria. </p>
 
 
 
@@ -88,15 +88,16 @@
 
 
 
-
-
       <form action="email-conf" method="post" novalidate>
 
         <input type="hidden" name="answers-checked" value="true">
 
         <label class="govuk-label" for="email">
-          Please enter your email address
+          Email address
         </label>
+        <div id="email-hint" class="govuk-hint">
+          We’ll only use this to send you updates about funding
+        </div>
         <input class="govuk-input" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
         <p>&nbsp;</p>
 
